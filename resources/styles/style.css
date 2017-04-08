@@ -32,3 +32,58 @@ header nav span {
 header a {
   color: Black;
 }
+
+.maincontainer {
+  display: flex;
+  width: 1232px;
+  margin: 0 auto;
+  padding-top: 116px;
+}
+
+.column {
+  border: 1px Black solid;
+  display: flex;
+  flex-direction: column;
+  margin-right: 30px;
+}
+.column.large {
+  width: 630px;
+}
+
+.column.medium {
+  width: 300px;
+}
+
+.column.small {
+  width: 240px;
+}
+
+.mainheadline {
+  border: 1px Black solid;
+}
+
+.mainimage {
+
+}
+
+.headline {
+  border: 1px Black solid;
+}
+
+.story {
+  border: 1px Black solid;
+}
+
+p.storytext  {
+  font-family: Georgia;
+  font-size: 17px;
+  color: black;
+}
+
+.newsbites {
+  border: 1px Black solid;
+}
+
+.bite {
+
+}
