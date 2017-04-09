@@ -1,3 +1,6 @@
+body {
+  margin: 0;
+}
 header {
   font-family: Verdana;
   font-size: 14px;
@@ -5,7 +8,11 @@ header {
   display: flex;
   align-items: center;
   border-bottom: 1px Black solid;
-  padding: 0 0 20px 0;
+  height: 80px;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  background-color: White;
 }
 
 .masthead {
@@ -36,15 +43,14 @@ header a {
 .maincontainer {
   display: flex;
   width: 1232px;
-  margin: 0 auto;
+  margin: 0 auto 78px auto;
   padding-top: 116px;
 }
 
 .column {
-  border: 1px Black solid;
   display: flex;
   flex-direction: column;
-  margin-right: 30px;
+  margin-right: 32px;
 }
 .column.large {
   width: 630px;
@@ -59,7 +65,7 @@ header a {
 }
 
 .mainheadline {
-  border: 1px Black solid;
+  display: block;
 }
 
 .story-image {
@@ -73,10 +79,12 @@ header a {
   justify-content: center;
 }
 
-.mainstory.story-image {
+.mainheadline .story-image {
   background-image: url("../images/img-story-main.png");
   font-size: 40px;
   text-align: left;
+  width: 630px;
+  margin-top: 0;
 }
 
 .science.story-image {
@@ -91,22 +99,37 @@ header a {
   background-image: url("../images/img-story-1.png");
 }
 
-.headline {
-  border: 1px Black solid;
+.story-column .headline {
+  height: 250px;
 }
 
+.story-column {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 17px;
+}
+
+.story-column.headline {
+  height: 250px;
+}
 .story {
-  border: 1px Black solid;
+  display: flex;
+  flex-direction: column;
+  width: 300px;
 }
 
-p.storytext  {
+.storytext {
+  margin-top: 16px;
+}
+
+p {
   font-family: Georgia;
   font-size: 17px;
   color: black;
 }
 
 .newsbites {
-  border: 1px Black solid;
+  display: block;
 }
 
 .bite {
