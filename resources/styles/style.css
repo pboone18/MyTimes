@@ -129,9 +129,23 @@ p {
 }
 
 .newsbites {
-  display: block;
+    display: block;
+}
+
+.newsbites h3 {
+  text-align: center;
+  margin-bottom: 16px;
+  font-size: 16px;
+  font-weight: bold;
 }
 
 .bite {
-
+  background-color: WhiteSmoke;
+  font-family: Verdana;
+  font-size: 12px;
+  color: DimGray;
+  border-bottom: 1px solid Black;
+  margin: 0;
+  padding: 10px 10px;
+  display: block;
 }
